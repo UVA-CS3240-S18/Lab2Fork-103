@@ -4,16 +4,20 @@ import random
 
 print("Welcome to Pig!")
 
+playerinput = input("Who goes first? P for Player, C for Computer")
+if playerinput =="P"
+    turn == True
+if playerinput == "C"
+    turn == False
 done = False
 player_temp_total = 0
 player_total = 0
 comp_temp_total = 0
 comp_total = 0
-turn = "player"
 winning_score = 50
 
 while not done:
-    while turn == "player" and not done:
+    while turn and not done:
         print()
         print("Player:", player_total, "Computer:", comp_total)
         print("It's your turn!")
@@ -36,7 +40,7 @@ while not done:
             print("You win! " + str(player_total) + " to " + str(comp_total))
             done = True
 
-    while turn == "computer" and not done:
+    while not turn and not done:
         print()
         print("Player:", player_total, "Computer:", comp_total)
         print("It's the computer's turn!")
