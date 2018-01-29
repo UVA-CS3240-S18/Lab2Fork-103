@@ -1,4 +1,8 @@
 # Mark Sherriff (mss2x)
+# Sarah Smith (ses2mf)
+
+print("A Lo Shu Magic square is one in which the numerical values in each row and column add up to 15.")
+print("The square we are using is 3x3, so 9 numbers must be entered to fill all spaces in the square.")
 
 numbers = (input("Numbers: ")).split()
 
