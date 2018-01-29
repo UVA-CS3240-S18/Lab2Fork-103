@@ -11,6 +11,7 @@ comp_temp_total = 0
 comp_total = 0
 turn = "player"
 winning_score = 50
+apple_pie = 0
 
 while not done:
     while turn == "player" and not done:
@@ -22,7 +23,11 @@ while not done:
         if roll == 1:
             turn = "computer"
             player_temp_total = 0
-            print("PIG! Too bad! Your total is currently:", player_total)
+            print("PIG! How could you let the machines win??? Your total is currently:", player_total)
+         if roll == 3:
+            turn = "computer"
+            player_temp_total += roll
+            print("You found an Apple Pie! Hold onto these, they might help you when the machines get too powerful....",player_total)
         else:
             player_temp_total += roll
             print("You currently have " + str(player_temp_total) + " banked.")
@@ -33,7 +38,7 @@ while not done:
                 print("Your total socre is now:", player_total)
                 turn = "computer"
         if player_total > winning_score:
-            print("You win! " + str(player_total) + " to " + str(comp_total))
+            print("You win!Go humans!Boo machines! " + str(player_total) + " to " + str(comp_total))
             done = True
 
     while turn == "computer" and not done:
@@ -50,11 +55,15 @@ while not done:
             comp_temp_total += roll
             print("The computer has " + str(comp_temp_total) + " banked.")
             if comp_temp_total > 6 or comp_total + comp_temp_total > winning_score:
-                print("The computer has chosen to end its turn.")
+                print("The computer has chosen to end its turn")
                 comp_total += comp_temp_total
                 comp_temp_total = 0
                 print("The computer's score is now:", comp_total)
                 turn = "player"
         if comp_total > winning_score:
-            print("The computer wins! " + str(comp_total) + " to " + str(player_total))
+            if apple_pie>1:
+                print("You win! You saved humanity using apple pie! Go put that on your Resume!")
+            else
+            print("The computer wins! How could you! ")
+            
             done = True
