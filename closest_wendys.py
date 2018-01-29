@@ -21,7 +21,7 @@ lat = 38.0322727
 lon = -78.50997339999999
 datafile = open("wendys.csv", "r")
 
-closest_dist = 200
+closest_dist = 10000000
 closest_wendys = ""
 
 for line in datafile:
