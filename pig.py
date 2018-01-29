@@ -58,3 +58,5 @@ while not done:
         if comp_total > winning_score:
             print("The computer wins! " + str(comp_total) + " to " + str(player_total))
             done = True
+
+print("You're done!")

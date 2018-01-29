@@ -39,3 +39,4 @@ print("The closest Wendy's (", closest_wendys, ") is", closest_dist, "miles away
 google_maps_url = google_maps_url.replace(' ', '+')
 webbrowser.open(google_maps_url)
 
+print("You're done!")

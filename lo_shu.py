@@ -43,5 +43,6 @@ if not is_square:
 else:
     print("This is a valid Lo Shu Magic Square!")
 
+print("You're done!")
 
 
