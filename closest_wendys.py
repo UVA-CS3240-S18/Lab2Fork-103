@@ -17,8 +17,10 @@ def distance_between(lat_1, lon_1, lat_2, lon_2):
 #lat = float(input("Current latitude: "))
 #lon = float(input("Current longitude: "))
 
-lat = 38.0322727
-lon = -78.50997339999999
+# 38.0322727
+# -78.50997339999999
+lat = float(input("Input latitude: "));
+lon = float(input("Input longitude: "));
 datafile = open("wendys.csv", "r")
 
 closest_dist = 200
