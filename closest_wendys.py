@@ -9,13 +9,10 @@ def distance_between(lat_1, lon_1, lat_2, lon_2):
     theta = lon_1 - lon_2
     dist = math.sin(lat_1 * math.pi / 180.0) * math.sin(lat_2 * math.pi / 180.0) + math.cos(lat_1 * math.pi / 180.0) * math.cos(lat_2 * math.pi / 180.0) * math.cos(theta * math.pi / 180.0)
     dist = math.acos(dist)
-    dist = dist * 180.0 / math.pi
-    dist = dist * 60 * 1.1515
+    dist *= 180.0 / math.pi
+    dist *= 60 * 1.1515
 
     return dist
-
-#lat = float(input("Current latitude: "))
-#lon = float(input("Current longitude: "))
 
 lat = 38.0322727
 lon = -78.50997339999999
@@ -38,4 +35,3 @@ datafile.close()
 print("The closest Wendy's (", closest_wendys, ") is", closest_dist, "miles away.")
 google_maps_url = google_maps_url.replace(' ', '+')
 webbrowser.open(google_maps_url)
-
