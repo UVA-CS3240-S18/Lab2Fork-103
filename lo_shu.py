@@ -1,5 +1,8 @@
 # Mark Sherriff (mss2x)
 
+print("A Lo Shu Magic square is one in which the values in each row and column add up to 15.")
+print("The square we are using is 3x3, so 9 numbers must be entered to fill all spaces.")
+
 numbers = (input("Numbers: ")).split()
 
 square = [[0,0,0],[0,0,0],[0,0,0]]
