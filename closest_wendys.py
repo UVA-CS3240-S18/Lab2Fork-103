@@ -1,4 +1,5 @@
 # Mark Sherriff (mss2x)
+# Wazzup world
 
 import math
 import webbrowser
