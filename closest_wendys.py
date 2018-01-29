@@ -1,4 +1,5 @@
 # Mark Sherriff (mss2x)
+# Amanda Campos (ac8ek)
 
 import math
 import webbrowser
