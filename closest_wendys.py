@@ -28,7 +28,7 @@ for line in datafile:
     entry = line.split(";")
     dist_to_wendys = distance_between(lat, lon, float(entry[0]), float(entry[1]))
     if dist_to_wendys < closest_dist:
-        google_maps_url = "https://www.google.com/maps?q=" + str(entry[4]) + "+" + str(entry[5]) + "+" + str(entry[6])
+        google_maps_url = "https://www.google.com/maps?q=" + entry[4] + "+" + entry[5] + "+" + entry[6]
         print(google_maps_url)
         closest_dist = dist_to_wendys
         closest_wendys = entry[2]
