@@ -1,6 +1,6 @@
 # Mark Sherriff (mss2x)
 
-numbers = (input("Numbers: ")).split()
+numbers = (input("Numbers please add nine numbers separated by a space: ")).split()
 
 square = [[0,0,0],[0,0,0],[0,0,0]]
 
