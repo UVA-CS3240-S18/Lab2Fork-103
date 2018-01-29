@@ -1,9 +1,9 @@
-# Mark Sherriff (mss2x)
+# Mac Sochor (mas3ju)
 
 import math
 import webbrowser
 
-google_maps_url = "https://www.google.com/maps/@35.372742,-81.954957,15z?hl=en"
+google_maps_url = "https://www.google.com/maps/@38.010148,-78.496720,15z?hl=en"
 
 def distance_between(lat_1, lon_1, lat_2, lon_2):
     theta = lon_1 - lon_2
@@ -17,8 +17,8 @@ def distance_between(lat_1, lon_1, lat_2, lon_2):
 #lat = float(input("Current latitude: "))
 #lon = float(input("Current longitude: "))
 
-lat = 38.0322727
-lon = -78.50997339999999
+lat = 38.040148
+lon = -78.496720
 datafile = open("wendys.csv", "r")
 
 closest_dist = 200
