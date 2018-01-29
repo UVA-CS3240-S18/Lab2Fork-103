@@ -2,6 +2,10 @@
 
 numbers = (input("Numbers: ")).split()
 
+if len(numbers) != 9:
+    print("Require 9 numbers")
+    exit(1)
+
 square = [[0,0,0],[0,0,0],[0,0,0]]
 
 count = 0
