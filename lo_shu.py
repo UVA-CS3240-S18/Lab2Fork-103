@@ -1,6 +1,8 @@
 # Mark Sherriff (mss2x)
 
-numbers = (input("Numbers: ")).split()
+numbers = (input("Numbers in row form: ")).split()
+while len(numbers) != 9:
+	numbers = (input("9 numbers in row form: ")).split()
 
 square = [[0,0,0],[0,0,0],[0,0,0]]
 
@@ -21,27 +23,27 @@ for row in square:
 for row in square:
     if sum(row) != 15:
         is_square = False
-        print(str(row) + " fails the test!")
+        print(str(row) + " fails the test.")
 
 # check cols
 for i in range(3):
     if square[0][i] + square[1][i] + square[2][i] != 15:
         is_square = False
-        print("Column " + str(i) + " fails the test!")
+        print("Column " + str(i) + " fails the test.")
 
 # check diagonals
 if square[0][0] + square[1][1] + square[2][2] != 15:
     is_square = False
-    print("Left->Right diagonal fails the test!")
+    print("Left->Right diagonal fails the test.")
 
 if square[0][2] + square[1][1] + square[2][0] != 15:
     is_square = False
-    print("Right->Left diagonal fails the test!")
+    print("Right->Left diagonal fails the test.")
 
 if not is_square:
-    print("This is not a Lo Shu Magic Square!")
+    print("This is not a Lo Shu Magic Square.")
 else:
-    print("This is a valid Lo Shu Magic Square!")
+    print("This is a valid Lo Shu Magic Square.")
 
 
 
