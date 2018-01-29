@@ -1,9 +1,14 @@
 # Mark Sherriff (mss2x)
 
 import random
-
+print()
 print("Welcome to Pig!")
-
+print("==================")
+print("When it is your turn you may choose to roll or not roll a number from 1-6.")
+print("Rolling a number from 2 to 5 adds it to your banked total")
+print("Rolling a 1, resets your banked total, ends your turn, and starts the computer's turn.")
+print("Choosing not to roll adds your banked total to your actual score, and switches turns")
+print("==================")
 done = False
 player_temp_total = 0
 player_total = 0
