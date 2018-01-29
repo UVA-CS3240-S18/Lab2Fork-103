@@ -4,6 +4,8 @@ import random
 
 print("Welcome to Pig!")
 
+print("Matt was here~")
+
 done = False
 player_temp_total = 0
 player_total = 0
@@ -26,7 +28,13 @@ while not done:
         else:
             player_temp_total += roll
             print("You currently have " + str(player_temp_total) + " banked.")
-            choice = input("Do you wish to roll again (y/n)?: ")
+            #Added to make sure to get a valid input
+            while True:
+                choice = input("Do you wish to roll again (y/n)?: ")
+                if choice.lower() not in ('y','n'):
+                    print("Not an appropriate choice.")
+                else:
+                    break
             if choice == 'n':
                 player_total += player_temp_total
                 player_temp_total = 0
