@@ -49,7 +49,8 @@ while not done:
         else:
             comp_temp_total += roll
             print("The computer has " + str(comp_temp_total) + " banked.")
-            if comp_temp_total > 6 or comp_total + comp_temp_total > winning_score:
+            if comp_temp_total >= 20 or comp_total + comp_temp_total > winning_score: #based on probabilities, optimal strategy is to hold at 20
+                #5/6 chance of earning an average of 4 points, 1/6 chance of losing all points. 20 is the point where it is not worth rolling more
                 print("The computer has chosen to end its turn.")
                 comp_total += comp_temp_total
                 comp_temp_total = 0
