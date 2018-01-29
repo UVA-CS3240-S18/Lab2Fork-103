@@ -14,7 +14,8 @@ winning_score = 50
 
 while not done:
     while turn == "player" and not done:
-        print()
+	#extra print statement
+        #print()
         print("Player:", player_total, "Computer:", comp_total)
         print("It's your turn!")
         roll = random.randint(1,6)
@@ -45,7 +46,8 @@ while not done:
         if roll == 1:
             turn = "player"
             comp_temp_total = 0
-            print("PIG! Too bad! The computer's total is currently:", comp_total)
+			#need to print comp_temp_total
+            print("PIG! Too bad! The computer's total is currently:", comp_temp_total)
         else:
             comp_temp_total += roll
             print("The computer has " + str(comp_temp_total) + " banked.")
