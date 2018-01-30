@@ -2,8 +2,6 @@
 
 import random
 
-print("Welcome to Pig!")
-
 done = False
 player_temp_total = 0
 player_total = 0
@@ -11,6 +9,15 @@ comp_temp_total = 0
 comp_total = 0
 turn = "player"
 winning_score = 50
+
+print("Welcome to Pig! \n Here are the rules") 
+print("you and your opponent face off rolling dice")
+print("You each take turns and add the number")
+print("you rolled to your score. You can then")
+print("wish to continue or give the turn to")  
+print("the computer. The catch? If you roll") 
+print("1, you lose all the points for the turn.") 
+print("First player to reach", winning_score, "wins")
 
 while not done:
     while turn == "player" and not done:
